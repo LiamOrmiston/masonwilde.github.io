@@ -1,0 +1,98 @@
+body
+{	
+	padding:20px;
+	background-color:4f5b66;
+	background-image:url("bg.jpg");
+	color:white;
+	text-align:center;
+}
+
+.main
+{
+	margin:auto;
+	border-radius:10px;
+	width:60%;
+	height:60%;
+	text-align:center;
+	background-color:#c0c5ce;
+	color:black;
+}
+
+.head p 
+{	
+	font-family:arial;
+	font-size:20;
+	padding-top:2%;
+}
+
+.vid
+{
+	width=80%;
+	height=80%;
+}
+
+.vid iframe
+{
+	
+	width:80%;
+	height:80%;
+}
+
+.head
+{
+	width:60%;
+	height:110px;
+	text-align:center;
+	background-color:#c0c5ce;
+	border-radius:10px;
+	margin:auto;
+	color:black;
+	
+}
+
+a:link, a:visited
+{
+	color: grey;
+}
+
+a:visited
+{
+	color: 
+}
+
+a:hover
+{
+	color:black;
+}
+
+a:active
+{
+	color:grey;
+}
+.main a:link, a:visited
+{
+	color:white;
+	padding:5px;
+	background-color:4f5b66;
+	border-radius:10px;
+	width: 60px;
+	height: 15px;
+	text-decoration:none;
+}
+
+.main a:hover
+{
+	color:black;
+	background-color:grey;
+}
+
+@font-face
+{
+	font-family: batman;
+	src: url(batmfa__.ttf);
+}
+
+.test p
+{
+	font-family: batman;
+}
