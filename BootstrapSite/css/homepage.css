@@ -1,0 +1,220 @@
+p,h1,h2,h3 {
+	display: inline-block;
+	float:none;
+	vertical-align:middle;
+	text-align: center;
+}
+.padded{
+	padding-top=150px;
+}
+
+.parallax-text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 50px;
+color:white;
+}
+
+.parallax-intro {
+	
+    padding-top: 150px;
+	/* The image used */
+    background-image: url("../img/intro.jpeg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+	text-align: center;
+	
+}
+
+.parallax-schedule {
+	
+	
+	/* The image used */
+    background-image: url("../img/schedule.jpeg");
+
+    /* Full height */
+    height: 30%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align:center;
+	vertical-align:middle;
+	
+	
+	float:none;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.parallax-register {
+	
+	/* The image used */
+    background-image: url("../img/register.jpeg");
+
+    /* Full height */
+    height: 30%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align:center;
+	vertical-align:middle;
+	
+	
+	float:none;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.parallax-sponsors {
+	
+	/* The image used */
+    background-image: url("../img/sponsors.jpeg");
+
+    /* Full height */
+    height: 30%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align:center;
+	vertical-align:middle;
+	
+	
+	float:none;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.parallax-contact {
+	
+	/* The image used */
+    background-image: url("../img/contact.jpeg");
+
+    /* Full height */
+    height: 30%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align:center;
+	vertical-align:middle;
+	
+	
+	float:none;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.parallax-faq {
+	
+	/* The image used */
+    background-image: url("../img/faq.jpg");
+
+    /* Full height */
+    height: 30%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align:center;
+	vertical-align:middle;
+	
+	
+	float:none;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.intro-section {
+    height: 400px;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.schedule-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.register-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.faq-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.vertical-center {
+  min-height: 20%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 20vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .8em;
+  margin-bottom: 1em;
+}
+.faq-list {
+  overflow: hidden;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-item-name {
+  text-align: left;
+  float: left;
+  margin-right: 5%;
+  width: 30%;
+}
+.faq-item-text {
+  text-align: left;
+  float: left;
+  width: 55%;
+  margin-bottom: 2em;
+}
+.faq-item-text p {
+  margin: 0;
+  text-align:left;
+}
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status 
