@@ -196,7 +196,7 @@ color:white;
 }
 .faq-list {
   overflow: hidden;
-  width: 520px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
