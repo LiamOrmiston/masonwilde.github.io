@@ -32,10 +32,10 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-color:#eee;">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -82,15 +82,15 @@
 		<img src="img/JHLogo2.svg" align="center" height=90% >
 
     </section>
-	<section class="intro-section">
-		<div class="container-fluid">
-                    <p>WELCOME TO JAYHACKS</p>
-					<br>
-					<p>The inaugural hackathon at the University of Kansas</p>
-					<br>
-					<p>Our goal is to provide you with an environment that nurtures inspiration. Whether or not you end up submitting a project, we hope that you leave JayHacks with new tools in your problem solving repertoire</p>
-        </div>
-	</section>
+    <section class="padded">
+		<div class="container-fluid intro-section" style="padding:100px;">
+      <p>WELCOME TO JAYHACKS</p>
+      <br>
+      <p>The inaugural hackathon at the University of Kansas</p>
+      <br>
+      <p>Our goal is to provide you with an environment that nurtures inspiration. Whether or not you end up submitting a project, we hope that you leave JayHacks with new tools in your problem solving repertoire</p>
+		</div>
+    </section>
 
     <!-- Schedule Section -->
     <section id="schedule" class="padded">
@@ -344,7 +344,7 @@
 
 
 
-	<section class="container-fluid">
+	<section class="container-fluid copyright">
 		<p>© JayHacks 2016</p>
   <br>
 
@@ -357,10 +357,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Scrolling Nav JavaScript -->
+    <!-- Scrolling Nav JavaScript
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-
+  -->
 </body>
 
 </html>

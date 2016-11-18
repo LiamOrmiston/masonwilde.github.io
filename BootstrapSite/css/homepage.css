@@ -146,7 +146,7 @@ color:white;
 }
 
 .intro-section {
-    height: 400px;
+    height: 100%px;
     padding-top: 150px;
     text-align: center;
     background: #eee;
@@ -178,6 +178,11 @@ color:white;
     padding-top: 150px;
     text-align: center;
     background: #eee;
+}
+
+.copyright{
+	text-align: center;
+	background: #eee;
 }
 
 .vertical-center {
@@ -216,5 +221,82 @@ color:white;
   margin: 0;
   text-align:left;
 }
+
+.navbar-default {
+  background-color: #272727;
+  border-color: #878889;
+}
+.navbar-default .navbar-brand {
+  color: #f0f0f0;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #161616;
+}
+.navbar-default .navbar-text {
+  color: #f0f0f0;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f0f0f0;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #161616;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #161616;
+  background-color: #878889;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #161616;
+  background-color: #878889;
+}
+.navbar-default .navbar-toggle {
+  border-color: #878889;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #878889;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f0f0f0;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f0f0f0;
+}
+.navbar-default .navbar-link {
+  color: #f0f0f0;
+}
+.navbar-default .navbar-link:hover {
+  color: #161616;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f0f0f0;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #161616;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #161616;
+    background-color: #878889;
+  }
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important;
+    padding-bottom:0 !important;
+    height: 28px;
+}
+.navbar {min-height:28px !important;}
 Contact GitHub API Training Shop Blog About
 © 2016 GitHub, Inc. Terms Privacy Security Status
