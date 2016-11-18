@@ -17,7 +17,7 @@ color:white;
 
 .parallax-intro {
 
-    padding-top: 150px;
+    padding-top: 28px;
 	/* The image used */
     background-image: url("../img/intro2.jpeg");
 
@@ -227,17 +227,18 @@ color:white;
   border-color: #878889;
 }
 .navbar-default .navbar-brand {
-  color: #f0f0f0;
+  color: #eee;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #161616;
 }
 .navbar-default .navbar-text {
-  color: #f0f0f0;
+  color: #eee;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #f0f0f0;
+  color: #eee;
+	font-family:arial;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -270,7 +271,7 @@ color:white;
   border-color: #f0f0f0;
 }
 .navbar-default .navbar-link {
-  color: #f0f0f0;
+  color: #eee;
 }
 .navbar-default .navbar-link:hover {
   color: #161616;
@@ -278,7 +279,7 @@ color:white;
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #f0f0f0;
+    color: #eee;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
