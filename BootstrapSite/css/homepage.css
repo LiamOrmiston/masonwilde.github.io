@@ -239,6 +239,7 @@ color:white;
 .navbar-default .navbar-nav > li > a {
   color: #eee;
 	font-family:arial;
+	vertical-align: middle;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
