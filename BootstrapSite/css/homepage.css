@@ -303,14 +303,14 @@ color:white;
 Contact GitHub API Training Shop Blog About
 © 2016 GitHub, Inc. Terms Privacy Security Status
 
-.register-section img .GOLD{
+.register-section .GOLD img{
 	height:100px;
 }
 
-.register-section img .SILVER{
+.register-section .SILVER img{
 	height:75px;
 }
 
-.register-section img .BRONZE{
+.register-section .BRONZE img{
 	height:50px;
 }
