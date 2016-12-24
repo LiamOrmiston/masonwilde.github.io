@@ -302,3 +302,15 @@ color:white;
 .navbar {min-height:28px !important;}
 Contact GitHub API Training Shop Blog About
 © 2016 GitHub, Inc. Terms Privacy Security Status
+
+.register-section img .GOLD{
+	height:100px;
+}
+
+.register-section img .SILVER{
+	height:75px;
+}
+
+.register-section img .BRONZE{
+	height:50px;
+}
