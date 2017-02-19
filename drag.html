@@ -8,7 +8,9 @@
 		<link rel="stylesheet" type"text/css" href="styles.css">
 	</head>
 	<body>
-		<div id="case1" style="height:30px;width:30px;background-color:red;top:50%;left:50%;position:absolute;"></div>
+		<div name="box" style="height:30px;width:30px;background-color:red;top:50%;left:30%;position:absolute;"></div>
+		<div name="box" style="height:30px;width:30px;background-color:white;top:50%;left:50%;position:absolute;"></div>
+		<div name="box" style="height:30px;width:30px;background-color:blue;top:50%;left:70%;position:absolute;"></div>
 		<!--
 		<div id="case2" style="height:30px;width:30px;background-color:white;top:0;left:0;position:absolute;"></div>
 		<div id="case3" style="height:30px;width:30px;background-color:blue;"></div>
@@ -20,16 +22,19 @@
 			document.body.addEventListener('touchmove', function(event) {
 	  		event.preventDefault();
 			}, false);
-			var obj = document.getElementById('case1');
-			obj.addEventListener('touchmove', function(event) {
+			var obj = document.getElementsByName('box');
+			obj.forEach((x) => {
+			x.addEventListener('touchmove', function(event) {
 				// If there's exactly one finger inside this element
 				if (event.targetTouches.length == 1) {
 					var touch = event.targetTouches[0];
 					// Place element where the finger is
-					obj.style.left = touch.pageX + 'px';
-					obj.style.top = touch.pageY + 'px';
+					x.style.left = touch.pageX + 'px';
+					x.style.top = touch.pageY + 'px';
 				}
+
 			}, false);
+		});
 		</script>
 <!--
 		<script>
