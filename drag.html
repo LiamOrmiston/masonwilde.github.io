@@ -7,7 +7,9 @@
 
 		<link rel="stylesheet" type"text/css" href="styles.css">
 	</head>
-	<body>
+	<body style="background-color:white;background-image:ur;="";">
+		<!--<canvas id="myCanvas" width="100%" height="100%" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>-->
 		<div name="box" style="height:30px;width:30px;background-color:red;top:50%;left:30%;position:absolute;"></div>
 		<div name="box" style="height:30px;width:30px;background-color:white;top:50%;left:50%;position:absolute;"></div>
 		<div name="box" style="height:30px;width:30px;background-color:blue;top:50%;left:70%;position:absolute;"></div>
@@ -19,10 +21,17 @@
 		<div id="statusdiv"></div>
 
 		<script>
+
 			document.body.addEventListener('touchmove', function(event) {
 	  		event.preventDefault();
 			}, false);
 			var obj = document.getElementsByName('box');
+			/*
+			var canvas = document.getElementById('myCanvas');
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+			var canvasContext = canvas.getContext('2d');
+			*/
 			obj.forEach((x) => {
 			x.addEventListener('touchmove', function(event) {
 				// If there's exactly one finger inside this element
@@ -31,6 +40,15 @@
 					// Place element where the finger is
 					x.style.left = touch.pageX + 'px';
 					x.style.top = touch.pageY + 'px';
+					/*
+					canvasContext.clearRect(0,0,this.width, this.height);
+					canvasContext.beginPath();
+					canvasContext.moveTo(parseInt(obj[0].style.left), parseInt(obj[0].style.top));
+					canvasContext.lineTo(parseInt(obj[1].style.left), parseInt(obj[1].style.top));
+					canvasContext.lineTo(parseInt(obj[2].style.left), parseInt(obj[2].style.top));
+					canvasContext.lineTo(parseInt(obj[0].style.left), parseInt(obj[0].style.top));
+					canvasContext.stroke();
+					*/
 				}
 
 			}, false);
