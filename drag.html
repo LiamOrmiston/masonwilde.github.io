@@ -33,26 +33,20 @@ Your browser does not support the HTML5 canvas tag.</canvas>-->
 			var canvasContext = canvas.getContext('2d');
 			*/
 			obj.forEach((x) => {
-			x.addEventListener('touchmove', function(event) {
-				// If there's exactly one finger inside this element
-				if (event.targetTouches.length == 1) {
-					var touch = event.targetTouches[0];
-					// Place element where the finger is
-					x.style.left = touch.pageX + 'px';
-					x.style.top = touch.pageY + 'px';
-					/*
-					canvasContext.clearRect(0,0,this.width, this.height);
-					canvasContext.beginPath();
-					canvasContext.moveTo(parseInt(obj[0].style.left), parseInt(obj[0].style.top));
-					canvasContext.lineTo(parseInt(obj[1].style.left), parseInt(obj[1].style.top));
-					canvasContext.lineTo(parseInt(obj[2].style.left), parseInt(obj[2].style.top));
-					canvasContext.lineTo(parseInt(obj[0].style.left), parseInt(obj[0].style.top));
-					canvasContext.stroke();
-					*/
-				}
-
-			}, false);
-		});
+					x.addEventListener('touchmove', function(event) {
+						// If there's exactly one finger inside this element
+						if (event.targetTouches.length == 1) {
+							var touch = event.targetTouches[0];
+							// Place element where the finger is
+							x.style.left = touch.pageX + 'px';
+							x.style.top = touch.pageY + 'px';
+						}
+					})
+						x.addEventListener('mousemove', function(event) {
+							x.style.left = event.pageX - 15 + 'px';
+							x.style.top = event.pageY - 15 + 'px';
+						})
+				}, false);
 		</script>
 <!--
 		<script>
