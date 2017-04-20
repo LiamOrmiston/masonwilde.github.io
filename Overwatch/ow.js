@@ -9,11 +9,12 @@ oReq.onload = function() {
     printStuff(message); //Will alert: 42
 	console.log(message);
 };
-oReq.open("GET", "./users.txt", true);
+oReq.open("GET", "https://masonwilde.github.io/Overwatch/users.txt", true);
 
 oReq.send();
 
 function printStuff(string){
+	console.log(string);
 	var list = string.split('\n');
 	var sortedList = [];
 	var p1 = []
