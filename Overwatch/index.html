@@ -5,21 +5,7 @@
 <body>
 
 	<div id="form">
-		<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-			Username: <input type="text" name="name"><br>
-			<input type="submit">
-		</form>
-		<script type ="text/javascript">
-			 function WriteToFile(passForm) {
-
-			    set fso = CreateObject("Scripting.FileSystemObject");
-			    set s = fso.CreateTextFile("users.txt", True);
-			    s.writeline(document.passForm.input1.value);
-			    s.writeline(document.passForm.input2.value);
-			    s.writeline(document.passForm.input3.value);
-			    s.Close();
-			 }
-  	 	</script>
+		
 	</div>
 	<div id="table"></div>
 	<script src="ow.js"></script>
