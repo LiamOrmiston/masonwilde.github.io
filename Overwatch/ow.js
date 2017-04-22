@@ -10,7 +10,6 @@ oReq.onload = function() {
 	console.log(message);
 };
 oReq.open("GET", "https://masonwilde.github.io/Overwatch/users.txt", true);
-
 oReq.send();
 
 function printStuff(string){
