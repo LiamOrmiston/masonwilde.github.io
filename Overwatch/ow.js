@@ -1,19 +1,16 @@
-function reqListener () {
-      console.log(this.responseText);
-    }
 var oReq = new XMLHttpRequest(); //New request object
 oReq.onload = function() {
     //This is where you handle what to do with the response.
     //The actual data is found on this.responseText
 	var message = this.responseText;
-    printStuff(message); //Will alert: 42
-	console.log(message);
+    readList(message); //Will alert: 42
+	//console.log(message);
 };
 oReq.open("GET", "https://masonwilde.github.io/Overwatch/users.txt", true);
 oReq.send();
 
-function printStuff(string){
-	console.log(string);
+function readList(string){
+	//console.log(string);
 	var list = string.split('\n');
 	var newList = [];
 	list.forEach((x) => {
@@ -21,22 +18,31 @@ function printStuff(string){
 			newList.push(x);
 		}
 	})
-	console.log(newList);
+	//console.log(newList);
 	var sortedList = [];
-	var p1 = []
+
+	function update(){
+		$("#table").empty();
+		sortedList.map(function(data) {$("#table").append("<p>" + data.username + " : " + data.rank + "</p>")})
+
+	}
+
+	function addToList(item){
+		sortedList.push({username: item.username, rank: item.competitive.rank});
+		sortedList.sort(function(a,b){return b.rank - a.rank});
+		//console.log(sortedList);
+		update();
+	}
+
 	for (var name in newList){
 		//var string = "<p>" + newList[name] + "</p>\n";
 		//$("#table").append(string);
-		p1.push(
-			$.get(
-			"https://overwatch-api-ku.herokuapp.com/profile/pc/us/" + newList[name],
-	  	 	function(data) {sortedList.push({name: data.username, rank: data.competitive.rank});},
-			"json")
-		)
-		console.log(sortedList)
+		$.get(
+		"https://overwatch-api-ku.herokuapp.com/profile/pc/us/" + newList[name],
+  	 	addToList,
+		"json")
+		//console.log(sortedList)
 	}
-	//console.log(sortedList);
-	Promise.all(p1).then(() => {console.log(sortedList); finish(sortedList);});
 
 }
 
