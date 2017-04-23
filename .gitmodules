@@ -1,0 +1,3 @@
+[submodule "OWTool"]
+	path = OWTool
+	url = https://github.com/masonwilde/OWTool.git
