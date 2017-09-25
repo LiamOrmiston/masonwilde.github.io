@@ -1,3 +1,6 @@
 [submodule "OWTool"]
 	path = OWTool
 	url = https://github.com/masonwilde/OWTool.git
+[submodule "EECS448_Lab_03"]
+	path = EECS448_Lab_03
+	url = https://github.com/masonwilde/EECS448_Lab_03.git
