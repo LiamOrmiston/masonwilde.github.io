@@ -4,3 +4,6 @@
 [submodule "EECS448_Lab_03"]
 	path = EECS448_Lab_03
 	url = https://github.com/masonwilde/EECS448_Lab_03.git
+[submodule "EECS448_Lab_04"]
+	path = EECS448_Lab_04
+	url = https://github.com/masonwilde/EECS448_Lab_04.git
